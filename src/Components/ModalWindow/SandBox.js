@@ -22,7 +22,7 @@ class Sandbox extends Component {
     render() {
         return (
             <Fragment>
-                <h1><span>Test assignment</span></h1>
+                <h1><hr/><span>Test assignment</span></h1><hr/>
                 <lu id="buttons">
                     <li><MyButton id="Button_1" className="MyButton" onClick={(e) => {
                         ButtonId = e.currentTarget.id;
@@ -65,6 +65,7 @@ class Sandbox extends Component {
                         </MyButton>
                     </li>
                 </lu>
+
                 <Modal
                     title="Test dialog window"
                     isOpen={this.state.isOpen}
